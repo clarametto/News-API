@@ -20,7 +20,7 @@ Clara Metto
 
 
 ### Dependencies
-![Screenshot]()
+
 
 
 ### Live Link
@@ -28,7 +28,7 @@ Clara Metto
 
 
 ### Sample Screenshots
-
+![Screenshot]()
 
 
 ### Contact
