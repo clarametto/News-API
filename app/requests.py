@@ -30,3 +30,51 @@ def get_news_source():
             news_results = process_results(news_results_list)
     return news_results
 
+
+def process_results(news_results_list):
+    news_results= []
+    for news_item in news_results_list:
+
+        id = news_item.get('id')
+        name = news_item.get('name')
+        description = news_item.get('description')
+        url = news_item.get('url')
+        category = news_item.get('category')
+        language = news_item.get('language')
+        country = news_item.get('country')
+
+        if name:
+            news_object =News(id, name, description,url,category,language,country)
+            news_results.append(news_object)
+    return news_results
+
+
+def get_article(id):
+    get_article_url = 'https://newsapi.org/v2/top-headlines?sources={}&apiKey={}'.format(id)
+
+    article_result= None
+    with urllib.request.urlopen(get_article_url) as url:
+        get_article_data = url.read()
+        get_article_response = json.loads(get_article_data)
+        print (get_article_data)
+        if get_article_response['articles']:
+            article_list = get_article_response['articles']
+            article_result = process_article(article_list)
+
+    return article_result
+
+
+def process_article(article_list):
+    article_response= []
+    for article in article_list:
+            id = article.get('id')
+            author = article.get('author')
+            title = article.get('title')
+            description = article.get('description')
+            url = article.get('url')
+            urlToImage = article.get('urlToImage')
+            publishedAt = article.get('piblishedAt')
+            if urlToImage:
+                article_result =Articles(id, author,title, description,url,urlToImage,publishedAt)
+                article_response.append(article_result)
+    return article_response
