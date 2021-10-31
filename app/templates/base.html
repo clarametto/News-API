@@ -1,0 +1,12 @@
+{% extends 'bootstrap/base.html'%}
+<!-- Navbar block  --> 
+{% block navbar %}
+    {% include 'navbar.html' %}
+{% endblock %}
+{% block content %}
+{{super()}}
+{% block footer %}
+<footer>&copy; 2021 News Room</footer>
+{% endblock footer %}
+{% endblock content %}
+
