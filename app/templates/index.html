@@ -16,10 +16,12 @@
 <!-- block content -->
 {% block content%}
 <div class="container">
-<div class="card-header banner">
-    <h1>WORLD NEWS</h1>
+<div>
+    <div class="text-center pt-5 pb-5">
+        <span class="fs-1"><strong>WORLD NEWS</strong></span>
+    </div>
     <br><br>
-    <h3>Get your favorite news articles from different sources below.</h3>
+    <h3 class="text-center d-1 pt-5 pb-5">Get your favorite news articles from different sources below.</h3>
 
 </div>
     <div class="row">
@@ -49,4 +51,13 @@
         </div>
     </div>
 </div>
+
+<br><br><br>
+<div class="bg-info">
+    {% block footer %}
+        <footer class="text-center fs-1 pb-4">&copy; 2021 World News</footer>
+    {% endblock footer %}
+</div>
+
 {%endblock%}
+
