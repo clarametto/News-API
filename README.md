@@ -1,4 +1,4 @@
-# Password-Lock
+# WORLD NEWS API
 
 
 ## Author
@@ -6,6 +6,8 @@ Clara Metto
 
 
 ## Description
+
+This is an application that consume News-API to get news, list and preview news articles from various sources. Users can read news from different news categories.
 
 
 
