@@ -23,6 +23,6 @@ def articles(id):
 	view articles  page function that returns the articles page and its data
 	'''
 	articles = get_articles(id)
-	title = f'News Room articles | {id}'
+	title = f'News articles | {id}'
 
 	return render_template('news_articles.html',title= title,articles = articles)

@@ -1,44 +1,20 @@
-{% extend 'base.html'%}
+{% extends 'base.html'%}
 {% import 'macros.html' as macro%}
 
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        {% if title %}
-        <title> {{ title }}</title>
-        {% else %}
-        <title> Welcome to the best News Review website </title>
-        {% endif %}
-    </head>
-    <body>
+<!-- block styles -->
+{% block styles%}
+<style>
+    .row{
+        margin-bottom: 4vh;
+    }
+</style>
+{{ super() }}
+<link rel="stylesheet" href="{{url_for('static',filename='css/index.css')}}" />
+<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+{% endblock %}
 
+<!-- block content -->
+{% block content%}
+<div class="container">
 
-             
-             <h3> Technology</h3>
-
-             <ul>
-                {{ macro.displayNewsList(technology)}}
-            </ul>
-    
-    
-            
-            <h3> Business </h3>
-                    <ul>
-            {{ macro.displayNewsList(business)}}
-        </ul>
-
-            
-            <h3> Sports</h3>
-            <ul>
-                {{ macro.displayNewsList(sports)}}
-            </ul>
-    
-            
-    
-
-
-
-    
-    </body>
-</html>
+{%endblock%}
