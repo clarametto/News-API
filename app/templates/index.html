@@ -16,5 +16,37 @@
 <!-- block content -->
 {% block content%}
 <div class="container">
+<div class="card-header banner">
+    <h1>WORLD NEWS</h1>
+    <br><br>
+    <h3>Get your favorite news articles from different sources below.</h3>
 
+</div>
+    <div class="row">
+        <div class="">
+            <h3>Sports</h3>
+            {{ macro.displaySourceList(sports)}}
+        </div>
+
+    </div>
+    <div class="row">
+        <div class="">
+            <h2> Technology</h2>
+            {{ macro.displaySourceList(technology)}}
+        </div>
+    </div>
+    <div class="row">
+        <div class="">
+            <h2>Entertainment</h2>
+            {{ macro.displaySourceList(entertainment)}}
+        </div>
+    </div>
+    <div class="row">
+     
+        <div class="">
+            <h2> Business</h2>
+            {{ macro.displaySourceList(business)}}
+        </div>
+    </div>
+</div>
 {%endblock%}
