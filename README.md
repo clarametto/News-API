@@ -1,5 +1,5 @@
 # WORLD NEWS API
-
+Flask News-Application
 
 ## Author
 Clara Metto
@@ -12,13 +12,20 @@ This is an application that consume News-API to get news, list and preview news 
 
 
 ### Prerequisites
+- Flask 1.1.2
+- python 3
+- Terminal
 
-
-### Setup
+### Setup / Installation
+* Git clone repo
+```
+https://github.com/clarametto/News-API
+```
 
 
 ## Technologies Used
 - Python
+-flask
 
 
 ### Dependencies
@@ -26,11 +33,11 @@ This is an application that consume News-API to get news, list and preview news 
 
 
 ### Live Link
-[Click Here To View]()
+[Click Here To View](https://clara-news-app.herokuapp.com/)
 
 
 ### Sample Screenshots
-![Screenshot]()
+![Screenshot](https://imgbox.com/mMjRIACL)
 
 
 ### Contact
