@@ -52,7 +52,7 @@ zipp==3.6.0
 
 
 ### Sample Screenshots
-![Screenshot](https://imgbox.com/mMjRIACL)
+![Screenshot](https://images2.imgbox.com/b8/f0/mMjRIACL_o.png)
 
 
 ### Contact
