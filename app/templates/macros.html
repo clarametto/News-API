@@ -2,7 +2,7 @@
 {% for source_row in source_list |batch(4)%}
 <div class="row">
 	{% for sources in source_row %}
-	<div class="col-md-6 border border-secondary">
+	<div class="col-md-5 border border-rounded border-secondary m-1">
 		<div class="text-center pt-3">
 			<h3>{{ sources.name}}</h3>
 		</div>
